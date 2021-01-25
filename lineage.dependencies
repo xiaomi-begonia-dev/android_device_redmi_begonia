@@ -18,5 +18,9 @@
   {
     "repository" : "android_vendor_redmi_begonia-firmware",
     "target_path": "vendor/redmi/begonia-firmware"
+  },
+  {
+    "repository" : "android_packages_apps_ViPER4AndroidFX",
+    "target_path": "packages/apps/ViPER4AndroidFX"
   }
 ]
