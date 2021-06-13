@@ -80,8 +80,6 @@ on fs
 
 on late-fs
     write /proc/bootprof "INIT:late-fs"
-    wait_for_prop hwservicemanager.ready "true"
-    exec_start wait_for_keymaster
     mount_all --late
 
 on post-fs
