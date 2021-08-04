@@ -360,6 +360,10 @@ PRODUCT_PACKAGES += \
     fstab.mt6785_ramdisk \
     ueventd.mt6785.rc
 
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.mt6785.rc
+
 # Runtime Resource (RRO) Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayBegonia \
