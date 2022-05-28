@@ -29,6 +29,8 @@ persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com
 # Charger
 ro.charger.enable_suspend=true
 persist.vendor.quick.charge=1
+ro.charger.disable_init_blank=1
+ro.product.charger.unplugged_shutdown_time=1000
 
 # Dex
 persist.bg.dexopt.enable=true
