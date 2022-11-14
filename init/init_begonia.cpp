@@ -64,6 +64,7 @@ void load_device_properties() {
     property_override("ro.vendor.warranty_bit", "0");
     property_override("vendor.boot.vbmeta.device_state", "locked");
     property_override("vendor.boot.verifiedbootstate", "green");
+    property_override("ro.rice.chipset", "MemeTek G90T");
 }
 
 void load_dalvik_properties() {
