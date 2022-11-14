@@ -59,8 +59,19 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6.vendor
 
 # Dex
+# Recommend using the non debug dexpreopter
+USE_DEX2OAT_DEBUG := false
+
+# Dex pre-opt for speed
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUI \
+    SettingsInlelligence \
+    SettingsProvider \
+    Settings \
+    Launcher3QuickStep \
+    CustomPixelLauncherOverlay \
+    Phonesky \
+    GoogleServicesFramework
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
