@@ -62,6 +62,9 @@ PRODUCT_PACKAGES += \
 # Recommend using the non debug dexpreopter
 USE_DEX2OAT_DEBUG := false
 
+# Enable DM file pre-opting to reduce first boot time
+PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
+
 # Dex pre-opt for speed
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
