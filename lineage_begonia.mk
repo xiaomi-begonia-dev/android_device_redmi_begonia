@@ -21,7 +21,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DOESNT_LIKE_FLIPENDO := true
 RICE_MAINTAINER := "EreN"
 SUSHI_BOOTANIMATION := 1080
-TARGET_BUILD_APERTURE_CAMERA := true
+#TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_ENABLE_BLUR := true
 WITH_GMS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -29,6 +29,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+$(call inherit-product, packages/apps/ANXCamera/config.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
