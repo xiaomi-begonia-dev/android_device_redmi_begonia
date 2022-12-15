@@ -62,6 +62,7 @@ PRODUCT_PACKAGES += \
 # Recommend using the non debug dexpreopter
 USE_DEX2OAT_DEBUG := false
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Enable DM file pre-opting to reduce first boot time
 PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
