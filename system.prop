@@ -41,6 +41,7 @@ pm.dexopt.first-boot=quicken
 dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.dex2oat-threads=6
+dalvik.vm.systemuicompilerfilter=speed
 
 # Display
 ro.vendor.all_modes.colorpick_adjust=true
