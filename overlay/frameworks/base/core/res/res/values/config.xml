@@ -630,9 +630,6 @@
     <integer name="config_sysCPUTempMultiplier">1000</integer>
     <integer name="config_sysBatteryTempMultiplier">10</integer>
 
-    <!-- Disable UI touch sounds by default -->
-    <bool name="def_sound_effects_enabled">false</bool>
-
     <!-- Controls the navigation bar interaction mode:
          0: 3 button mode (back, home, overview buttons)
          1: 2 button mode (back, home buttons + swipe up for overview)
