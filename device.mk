@@ -74,6 +74,7 @@ ART_BUILD_HOST_DEBUG := false
 # Recommend using the non debug dexpreopter
 USE_DEX2OAT_DEBUG := false
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+DONT_DEXPREOPT_PREBUILTS := true
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
