@@ -25,6 +25,7 @@ SUSHI_BOOTANIMATION := 1080
 TARGET_ENABLE_BLUR := true
 WITH_GMS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
