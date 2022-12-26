@@ -356,6 +356,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.crypto.volume.filenames_mode=aes-256-cts \
     ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp \
     ro.hardware.egl=meow \
+    debug.hwui.skia_atrace_enabled=false \
     ro.hardware.nfc_nci=nqx.default \
     ro.hardware.gatekeeper=beanpod \
     ro.hardware.kmsetkey=beanpod \
