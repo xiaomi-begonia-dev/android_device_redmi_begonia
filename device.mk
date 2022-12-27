@@ -84,10 +84,10 @@ PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 
 # Dex pre-opt for speed
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
+    SystemUIGoogle \
     SettingsInlelligence \
     SettingsProvider \
-    Settings \
+    SettingsGoogle \
     Launcher3QuickStep \
     CustomPixelLauncherOverlay \
     Phonesky \
@@ -226,8 +226,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -358,9 +357,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.sys.thermal.data.path=/data/vendor/thermal/
 
-# Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb.gadget@1.0.vendor \
