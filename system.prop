@@ -35,6 +35,7 @@ ro.product.charger.unplugged_shutdown_time=1000
 # Dex
 persist.bg.dexopt.enable=true
 dalvik.vm.dexopt.secondary=true
+pm.dexopt.install=speed-profile
 pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.boot=verify
 pm.dexopt.first-boot=quicken
