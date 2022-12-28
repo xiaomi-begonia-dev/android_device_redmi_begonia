@@ -25,6 +25,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
 WITH_GMS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
