@@ -303,6 +303,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.example
 
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor \
+    libmtkperf_client    
+
 # MTK In-Call volumes adjusting service
 PRODUCT_PACKAGES += \
     MtkInCallService
