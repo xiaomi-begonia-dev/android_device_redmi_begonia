@@ -6,4 +6,4 @@ allow vendor_init { fingerprint_data_file vendor_fingerprint_data_file }:dir { r
 allow vendor_init proc_sched:file write;
 allow vendor_init proc_net:file write;
 
-set_prop(vendor_init, vendor_mtk_powerhal_prop)
+set_prop(vendor_init, vendor_power_prop)
