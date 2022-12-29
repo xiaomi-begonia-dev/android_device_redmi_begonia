@@ -860,7 +860,6 @@ vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib64/android.hardware.power-service-mediatek.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/libmtk-ril.so
 vendor/lib64/libmtk_drvb.so
