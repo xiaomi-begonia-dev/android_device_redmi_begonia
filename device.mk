@@ -93,6 +93,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Phonesky \
     GoogleServicesFramework
 
+# Debloat
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
