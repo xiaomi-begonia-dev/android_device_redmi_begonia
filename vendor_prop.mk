@@ -373,7 +373,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.soc.manufacturer=Mediatek \
     ro.soc.model=MT6785 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
-    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.primary_display_orientation=ORIENTATION_0 \
     ro.surface_flinger.running_without_sync_framework=true \
     ro.telephony.default_network=10,10,10,10 \
