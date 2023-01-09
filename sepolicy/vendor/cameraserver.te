@@ -6,3 +6,6 @@ get_prop(cameraserver, mtk_camera_prop)
 get_prop(cameraserver, exported_default_prop)
 get_prop(cameraserver, vendor_audio_prop)
 set_prop(cameraserver, system_prop)
+
+# Allow cameraserver to get debug_mtk_gpud_prop
+get_prop(cameraserver, debug_mtk_gpud_prop)

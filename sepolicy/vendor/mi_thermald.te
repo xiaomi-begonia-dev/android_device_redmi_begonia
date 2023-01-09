@@ -33,3 +33,5 @@ allow mi_thermald {
 } rw_file_perms;
 
 set_prop(mi_thermald, thermal_engine_prop)
+
+allow mi_thermald sysfs_battery_supply:dir { search };
