@@ -18,6 +18,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_begonia.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_begonia-user \
-    aosp_begonia-userdebug \
-    aosp_begonia-eng
+    $(foreach variant, user userdebug eng, aosp_begonia-$(variant))
