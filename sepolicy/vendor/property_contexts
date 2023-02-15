@@ -26,9 +26,6 @@ ro.boot.fpsensor.          u:object_r:vendor_fp_prop:s0
 # Hardware
 ro.hardware.chipname               u:object_r:build_prop:s0
 
-# Recovery
-persist.sys.recovery_update  u:object_r:persist_recovery_update_prop:s0
-
 # Power
 vendor.mediatek.powerhal.                               u:object_r:vendor_power_prop:s0
 
