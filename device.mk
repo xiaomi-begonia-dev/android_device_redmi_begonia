@@ -91,7 +91,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SettingsIntelligence \
     SettingsProvider \
     SettingsGoogle \
-    Launcher3QuickStep \
+    NexusLauncherRelease \
     CustomPixelLauncherOverlay \
     Phonesky \
     GoogleServicesFramework
