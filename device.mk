@@ -88,7 +88,7 @@ PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 # Dex pre-opt for speed
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUIGoogle \
-    SettingsInlelligence \
+    SettingsIntelligence \
     SettingsProvider \
     SettingsGoogle \
     Launcher3QuickStep \
