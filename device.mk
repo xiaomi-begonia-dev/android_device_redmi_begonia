@@ -366,7 +366,7 @@ PRODUCT_COPY_FILES += \
 
 # Tethering
 PRODUCT_PACKAGES += \
-    TetheringConfigOverlay
+    TetheringConfigOverlayBegonia
 
 # Text classifier
 PRODUCT_PACKAGES += \
