@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2021 The Potato Open Sauce Project
+# Copyright (C) 2023 The VoidUI Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #

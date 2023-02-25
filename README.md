@@ -21,4 +21,4 @@ It was released in September 2019.
 | Camera (Front)             | 20 MP, f/2.0, 0.9µm                                                                                                            |
 
 
-**Copyright (C) 2021 The LineageOS Project**
+**Copyright (C) 2023 The VoidUI Project**
