@@ -265,16 +265,6 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool name="skip_restoring_network_selection">true</bool>
 
-    <!-- Height of the status bar -->
-    <dimen name="status_bar_height_default">78.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
-    <dimen name="status_bar_height_portrait">78.0px</dimen>
-
-    <!-- Rounded corner padding and radius -->
-    <dimen name="rounded_corner_radius">7.5dp</dimen>
-    <dimen name="rounded_corner_radius_bottom">90.0px</dimen>
-    <dimen name="rounded_corner_radius_top">95.0px</dimen>
-
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
 
