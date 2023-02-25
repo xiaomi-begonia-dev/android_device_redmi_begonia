@@ -310,12 +310,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
-    libmtkperf_client    
+    libmtkperf_client
 
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub    
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 # MTK In-Call volumes adjusting service
 PRODUCT_PACKAGES += \
@@ -417,7 +417,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.supplicant@1.1.vendor \
     android.hardware.wifi.supplicant@1.2.vendor \
     android.hardware.wifi.supplicant@1.3.vendor \
-    WifiResOverlay
+    WifiResOverlayBegonia
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
