@@ -330,7 +330,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Properties
--include $(LOCAL_PATH)/vendor_prop.mk
+-include $(LOCAL_PATH)/configs/props/vendor_prop.mk
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -374,7 +374,7 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayBegonia \
     TelephonyOverlayBegonia \
     TetheringConfigOverlayBegonia \
-    WifiResOverlayBegonia 
+    WifiResOverlayBegonia
 
 # Seccomp
 PRODUCT_COPY_FILES += \

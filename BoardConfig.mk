@@ -148,7 +148,7 @@ ODM_MANIFEST_BEGONIA_FILES := $(DEVICE_PATH)/manifest_begonia.xml
 
 # Treble
 TARGET_COPY_OUT_VENDOR := vendor
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 
 # Sepolicy
 include device/mediatek/sepolicy/SEPolicy.mk
