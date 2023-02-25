@@ -365,9 +365,16 @@ PRODUCT_PACKAGES += \
 
 # Runtime Resource (RRO) Overlays
 PRODUCT_PACKAGES += \
-    WifiResOverlayBegonia \
+    ApertureOverlayBegonia \
+    BluetoothOverlayBegonia \
+    CarrierConfigOverlayBegonia \
+    FrameworksResOverlayBegonia \
+    SettingsOverlayBegonia \
+    SettingsProviderOverlayBegonia \
+    SystemUIOverlayBegonia \
+    TelephonyOverlayBegonia \
     TetheringConfigOverlayBegonia \
-    FrameworksResOverlayBegonia
+    WifiResOverlayBegonia 
 
 # Seccomp
 PRODUCT_COPY_FILES += \
