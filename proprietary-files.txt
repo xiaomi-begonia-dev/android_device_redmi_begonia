@@ -763,24 +763,24 @@ vendor/lib/hw/sound_trigger.primary.mt6785.so
 vendor/lib64/hw/sound_trigger.primary.mt6785.so
 
 # Mediatek
+vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek
 vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
 vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.5-service
-vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
+vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc
 vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc
-vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
@@ -964,9 +964,6 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 # MTK Engineering Mode
 app/LocationEM2/LocationEM2.apk|669c55e4067d74005d8d2b01d8245e0791116a20
 app/YGPS/YGPS.apk|5c49e0f668b21231260fc0c40285a38946281c95
-priv-app/EngineerMode/EngineerMode.apk|4a5051feaba14fa2bd43ff141034653a1189fefa
-vendor/app/EmCamera/EmCamera.apk|71154894a522f0fac741e08cca4fbe17c6ce2b70
-vendor/app/EmCamera/lib/arm64/libem_camera_jni.so|904c222b39f4a18e1843d68ce65a805d99b89c1a
 lib/libaudio_param_parser-sys.so
 lib/libaudiotoolkit.so
 lib/libaudioutilmtk.so
@@ -985,6 +982,9 @@ lib64/libem_support_jni.so
 lib64/libem_usb_jni.so
 lib64/libem_wifi_jni.so
 lib64/vendor.mediatek.hardware.audio@5.1.so|e05da71cb22e9bb5c81c60356cf2b103f57b29f2
+priv-app/EngineerMode/EngineerMode.apk|4a5051feaba14fa2bd43ff141034653a1189fefa
+vendor/app/EmCamera/lib/arm64/libem_camera_jni.so|904c222b39f4a18e1843d68ce65a805d99b89c1a
+vendor/app/EmCamera/EmCamera.apk|71154894a522f0fac741e08cca4fbe17c6ce2b70
 vendor/lib64/libem_camera_jni.so|904c222b39f4a18e1843d68ce65a805d99b89c1a
 
 # MTK-IMS
