@@ -466,7 +466,7 @@ PRODUCT_PACKAGES += \
     libunwindstack.vendor
 
 # MTK Jars (for IMS)
-include vendor/redmi/begonia-ims/begonia-ims-vendor.mk
+include vendor/xiaomi/begonia-ims/begonia-ims-vendor.mk
 
 PRODUCT_BOOT_JARS += \
     mediatek-common \
@@ -487,4 +487,4 @@ PRODUCT_PACKAGES += \
     RcsService
 
 # Inherit vendor
-$(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)
+$(call inherit-product, vendor/xiaomi/begonia/begonia-vendor.mk)

@@ -8,7 +8,7 @@
 set -e
 
 DEVICE=begonia
-VENDOR=redmi
+VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

@@ -7,7 +7,7 @@
 
 set -e
 
-VENDOR=redmi
+VENDOR=xiaomi
 DEVICE=begonia
 
 # Load extract_utils and do some sanity checks

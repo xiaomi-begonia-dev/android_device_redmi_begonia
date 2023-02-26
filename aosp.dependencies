@@ -4,20 +4,20 @@
     "target_path": "kernel/xiaomi/mt6785",
   },
   {
-    "repository" : "android_vendor_redmi_begonia",
-    "target_path": "vendor/redmi/begonia"
+    "repository" : "android_vendor_xiaomi_begonia",
+    "target_path": "vendor/xiaomi/begonia"
   },
   {
-    "repository" : "android_vendor_redmi_begonia-ims",
-    "target_path": "vendor/redmi/begonia-ims"
+    "repository" : "android_vendor_xiaomi_begonia-ims",
+    "target_path": "vendor/xiaomi/begonia-ims"
   },
   {
     "repository" : "android_packages_apps_MtkFMRadio",
     "target_path": "packages/apps/MtkFMRadio"
   },
   {
-    "repository" : "android_vendor_redmi_begonia-firmware",
-    "target_path": "vendor/redmi/begonia-firmware"
+    "repository" : "android_vendor_xiaomi_begonia-firmware",
+    "target_path": "vendor/xiaomi/begonia-firmware"
   },
   {
     "repository" : "android_packages_apps_ViPER4AndroidFX",
