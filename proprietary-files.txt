@@ -1098,13 +1098,13 @@ vendor/etc/init/camerahalserver.rc
 vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc|8dca72e6c5642a6a653cdb70348226267ebd264f
 vendor/etc/init/gsm0710muxd.rc|89120faa0b5c6936a30c815a274273d16614efb5
-vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.bip.rc|6daabb59dd3be51c6a66449b34e2edbe931d6e4b
+vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.cccifsd.rc|2769f3a5e4b4a0d5a57033ea9196425bbe3a17ec
 vendor/etc/init/init.cccimdinit.rc|48e5a99650ed7f59a28e58928aab3fb9aba34698
 vendor/etc/init/init.cccirpcd.rc|b705617724b0466039fdad07375ce32710c9d3c6
-vendor/etc/init/init.gps_drv.rc|3369ba4610ff8a7d9c134b95645b106f6453c0c8
 vendor/etc/init/init.fmradio_drv.rc
+vendor/etc/init/init.gps_drv.rc|3369ba4610ff8a7d9c134b95645b106f6453c0c8
 vendor/etc/init/init.md_apps.rc
 vendor/etc/init/init.mfp-daemon.rc|b37c2bcb59218a36ab2e6c683fd80c08d11dea60
 vendor/etc/init/init.udc_lib.rc
