@@ -51,10 +51,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
-# BesLoudness
-PRODUCT_PACKAGES += \
-    BesLoudness
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.3.vendor \
@@ -64,6 +60,12 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor
+
+# Common MediaTek Components
+PRODUCT_PACKAGES += \
+    BesLoudness \
+    MtkFMRadio \
+    MtkInCallService
 
 # Debloat
 PRODUCT_PACKAGES += \
@@ -140,10 +142,6 @@ PRODUCT_PACKAGES += \
 # DT2W
 PRODUCT_PACKAGES += \
     DT2W-Service-Begonia
-
-# FM Radio
-PRODUCT_PACKAGES += \
-    MtkFMRadio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -228,10 +226,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
-# MTK In-Call volumes adjusting service
-PRODUCT_PACKAGES += \
-    MtkInCallService
-
 # Neural
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.1.vendor \
@@ -254,6 +248,7 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
+# Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions
