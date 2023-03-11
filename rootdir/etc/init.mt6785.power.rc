@@ -8,27 +8,12 @@ on early-init
     write /sys/devices/platform/10012000.dvfsrc/helio-dvfsrc/dvfsrc_req_ddr_opp 0
 
 on init
-    # Set owner and perms for CPUSet (groups performance)
-    chown system system /dev/cpuset/foreground/boost
-    chown system system /dev/cpuset/foreground/boost/tasks
-    chmod 0660 /dev/cpuset/foreground/boost/tasks
-    chown system system /dev/cpuset/top-app/boost
-    chown system system /dev/cpuset/top-app/boost/tasks
-    chmod 0660 /dev/cpuset/top-app/boost/tasks
-
-    # Setup boosting for top processes
-    mkdir /dev/cpuset/foreground/boost
-    write /dev/cpuset/foreground/boost/mems 0
-    mkdir /dev/cpuset/top-app/boost
-    write /dev/cpuset/top-app/boost/mems 0
-
     # Tweak cpu usage for process groups
     write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 6-7
+    write /dev/cpuset/foreground/boost/cpus 0-7
     write /dev/cpuset/background/cpus 0-3
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/top-app/boost/cpus 6-7
     write /dev/cpuset/restricted/cpus 0-5
     write /dev/cpuset/camera-daemon/cpus 0-7
     write /dev/cpuset/audio-app/cpus 0-7
