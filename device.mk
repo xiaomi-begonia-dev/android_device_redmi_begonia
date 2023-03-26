@@ -64,7 +64,7 @@ PRODUCT_PACKAGES += \
 # Common MediaTek Components
 PRODUCT_PACKAGES += \
     BesLoudness \
-    MtkFMRadio \
+    RevampedFMRadio \
     MtkInCallService
 
 # Debloat
