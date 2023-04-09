@@ -374,6 +374,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.hardware.nfc_nci=nqx.default \
     ro.hardware.gatekeeper=beanpod \
     ro.hardware.kmsetkey=beanpod \
+    ro.hwui.render_ahead=10 \
     ro.incremental.enable=yes \
     ro.lmk.psi_complete_stall_ms=70 \
     ro.lmk.psi_partial_stall_ms=70 \
