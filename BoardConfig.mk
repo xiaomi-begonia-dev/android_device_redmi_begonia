@@ -133,6 +133,10 @@ TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
@@ -149,7 +153,6 @@ ODM_MANIFEST_BEGONIA_FILES := $(DEVICE_PATH)/manifest_begonia.xml
 
 # Treble
 TARGET_COPY_OUT_VENDOR := vendor
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 
 # Sepolicy
 include device/mediatek/sepolicy/SEPolicy.mk
