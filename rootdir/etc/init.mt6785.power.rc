@@ -105,6 +105,9 @@ on property:sys.boot_completed=1
     write /proc/sys/kernel/sched_lib_name "com.miHoYo.,UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
     # Post-boot I/O tuning
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/nr_requests 128
