@@ -18,12 +18,8 @@ $(call inherit-product, device/xiaomi/begonia/device.mk)
 # Inherit some common VoidUI stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_DOESNT_LIKE_FLIPENDO := true
 VOID_MAINTAINER := "EreN"
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BUILD_APERTURE_CAMERA := true
-TARGET_ENABLE_BLUR := true
-WITH_GMS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
