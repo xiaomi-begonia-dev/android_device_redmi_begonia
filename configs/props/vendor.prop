@@ -144,7 +144,6 @@ debug.sf.auto_latch_unsignaled=true
 debug.sf.disable_backpressure=true
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_egl_image_tracker=false
-debug.sf.enable_hwc_vds=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
 debug.sf.predict_hwc_composition_strategy=0
