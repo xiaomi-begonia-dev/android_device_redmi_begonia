@@ -43,8 +43,4 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="begonia" \
-    TARGET_DEVICE="begonia"
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
