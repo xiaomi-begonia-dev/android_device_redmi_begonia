@@ -367,6 +367,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayBegonia \
     FrameworksResOverlayBegonia \
     SettingsOverlayBegonia \
+    SettingsLibOverlayBegonia \
     SettingsProviderOverlayBegonia \
     SystemUIOverlayBegonia \
     TelephonyOverlayBegonia \
