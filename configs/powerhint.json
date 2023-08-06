@@ -351,7 +351,91 @@
         ""
       ],
       "Type": "Property"
-    }
+    },
+    {
+      "Name": "SchedTuneBoost",
+      "Path": "/dev/stune/schedtune.boost",
+      "Values": [
+        "100",
+        "50",
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 2
+    },
+    {
+      "Name": "SchedTunePreferIdle",
+      "Path": "/dev/stune/schedtune.prefer_idle",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
+      "Name": "FGSchedTuneBoost",
+      "Path": "/dev/stune/foreground/schedtune.boost",
+      "Values": [
+        "100",
+        "50",
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 2
+    },
+    {
+      "Name": "FGSchedTunePreferIdle",
+      "Path": "/dev/stune/foreground/schedtune.prefer_idle",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
+      "Name": "TASchedTuneBoost",
+      "Path": "/dev/stune/top-app/schedtune.boost",
+      "Values": [
+        "40",
+        "10"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
+      "Name": "TASchedTunePreferIdle",
+      "Path": "/dev/stune/top-app/schedtune.prefer_idle",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
+      "Name": "CDSchedTuneBoost",
+      "Path": "/dev/stune/camera-daemon/schedtune.boost",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    },
+    {
+      "Name": "CDSchedTunePreferIdle",
+      "Path": "/dev/stune/camera-daemon/schedtune.prefer_idle",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true,
+      "DefaultIndex": 0
+    }    
   ],
   "Actions": [
     {
@@ -394,13 +478,13 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 0,
-      "Value": "1666000"
+      "Value": "1800000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "2050000"
+      "Value": "1986000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -442,8 +526,56 @@
       "PowerHint": "INTERACTION",
       "Node": "TAUclampMin",
       "Duration": 0,
+      "Value": "75"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "SchedTuneBoost",
+      "Duration": 0,
       "Value": "50"
     },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "FGSchedTuneBoost",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "TASchedTuneBoost",
+      "Duration": 0,
+      "Value": "40"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CDSchedTuneBoost",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "SchedTunePreferIdle",
+      "Duration": 500,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "FGSchedTunePreferIdle",
+      "Duration": 500,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "TASchedTunePreferIdle",
+      "Duration": 500,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CDSchedTunePreferIdle",
+      "Duration": 500,
+      "Value": "0"
+    },    
     {
       "PowerHint": "LAUNCH",
       "Node": "FBTBoostTA",
