@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor
 
+# Certs
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,system/ca-certificates/files/,$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts)
+
 # Common MediaTek Components
 PRODUCT_PACKAGES += \
     BesLoudness \
