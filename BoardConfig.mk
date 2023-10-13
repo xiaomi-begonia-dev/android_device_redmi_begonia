@@ -149,6 +149,9 @@ ODM_MANIFEST_BEGONIA_FILES := $(DEVICE_PATH)/configs/vintf/manifest_begonia.xml
 # Treble
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Wifi
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
 # Sepolicy
 include device/mediatek/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
