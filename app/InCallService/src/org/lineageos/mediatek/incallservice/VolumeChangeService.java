@@ -2,9 +2,6 @@ package org.lineageos.mediatek.incallservice;
 
 import android.media.AudioManager;
 
-import android.telephony.TelephonyManager;
-import android.telephony.TelephonyCallback;
-
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Context;
@@ -18,7 +15,6 @@ public class VolumeChangeService extends Service {
 
     private Context mContext;
     private VolumeChangeReceiver mVolumeChangeReceiver;
-    private CallStateListener mCallStateListener;
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -35,20 +31,12 @@ public class VolumeChangeService extends Service {
         mContext = this;
 
         AudioManager audioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
-        TelephonyManager telephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
         mVolumeChangeReceiver = new VolumeChangeReceiver(audioManager);
-        mCallStateListener = new CallStateListener(audioManager);
 
         Log.i(LOG_TAG, "Service is starting...");
 
         this.registerReceiver(mVolumeChangeReceiver,
                                new IntentFilter(AudioManager.VOLUME_CHANGED_ACTION));
-
-        telephonyManager.registerTelephonyCallback(getMainExecutor(), mCallStateListener);
-
-        // Restore gain levels on service start.
-        GainUtils.setGainLevel(audioManager.getStreamVolume(AudioManager.STREAM_VOICE_CALL));
-
         return START_STICKY;
     }
 }
