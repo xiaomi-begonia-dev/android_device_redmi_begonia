@@ -9,6 +9,6 @@
 
 #include <string>
 
-void load_device_properties(void);
+void workaround_safety_properties(void);
 
 #endif // LIBINIT_SAFETY_PROPS_H
