@@ -69,11 +69,6 @@ TARGET_KERNEL_CONFIG := begonia_user_defconfig
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1 AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 KERNEL_LD := LD=ld.lld
-TARGET_KERNEL_BUILD_USER := noob
-TARGET_KERNEL_BUILD_HOST := EreN
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := neutron
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
@@ -144,12 +139,12 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 ODM_MANIFEST_SKUS += \
     begonia
 
-ODM_MANIFEST_BEGONIA_FILES := $(DEVICE_PATH)/manifest_begonia.xml
+ODM_MANIFEST_BEGONIA_FILES := $(DEVICE_PATH)/configs/vintf/manifest_begonia.xml
 
 # Treble
 TARGET_COPY_OUT_VENDOR := vendor
