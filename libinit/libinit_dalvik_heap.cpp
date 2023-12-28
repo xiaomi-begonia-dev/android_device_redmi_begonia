@@ -38,14 +38,14 @@ static const dalvik_heap_info_t dalvik_heap_info_8192 = {
 
 void set_dalvik_heap() {
     struct sysinfo sys;
-    const dalvik_heap_info_t *dhi;
-
     sysinfo(&sys);
 
-    if (sys.totalram > GB(5))
-        dhi = &dalvik_heap_info_6144;
-    else if (sys.totalram > GB(7))
+    const dalvik_heap_info_t *dhi = nullptr;
+    if (sys.totalram > GB(7)) {
         dhi = &dalvik_heap_info_8192;
+    } else {
+        dhi = &dalvik_heap_info_6144;
+    }
 
     property_override(HEAPSTARTSIZE_PROP, dhi->heapstartsize);
     property_override(HEAPGROWTHLIMIT_PROP, dhi->heapgrowthlimit);
