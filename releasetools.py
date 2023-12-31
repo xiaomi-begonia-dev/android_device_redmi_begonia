@@ -25,7 +25,7 @@ def IncrementalOTA_InstallEnd(info):
 
 def AddImageOnly(info, basename, incremental, firmware):
   if incremental:
-    input_zip = info.source_zip
+    input_zip = info.target_zip
   else:
     input_zip = info.input_zip
   if firmware:
@@ -57,7 +57,6 @@ def Firmware_Images(info, incremental):
       'gz': ['gz1', 'gz2'],
       'lk': ['lk', 'lk2'],
       'md1img': ['md1img'],
-      'recovery': ['recovery'],
       'scp': ['scp1', 'scp2'],
       'spmfw': ['spmfw'],
       'sspm': ['sspm_1', 'sspm_2'],
@@ -107,3 +106,5 @@ def Firmware_Images(info, incremental):
 
   fw_cmd += ')\n);'
   info.script.AppendExtra(fw_cmd)
+
+  AddImage(info, "recovery.img", "/dev/block/bootdevice/by-name/recovery", incremental)
