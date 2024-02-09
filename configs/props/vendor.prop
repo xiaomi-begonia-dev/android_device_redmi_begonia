@@ -294,13 +294,13 @@ telephony.active_modems.max_count=2
 telephony.lteOnCdmaDevice=1
 
 # SurfaceFlinger durations
-debug.sf.early.app.duration=24000000
-debug.sf.early.sf.duration=30000000
-debug.sf.earlyGl.app.duration=24000000
-debug.sf.earlyGl.sf.duration=30000000
+debug.sf.early.app.duration=16500000
+debug.sf.early.sf.duration=16000000
+debug.sf.earlyGl.app.duration=21000000
+debug.sf.earlyGl.sf.duration=13500000
 debug.sf.hwc.min.duration=23000000
-debug.sf.late.app.duration=24000000
-debug.sf.late.sf.duration=30000000
+debug.sf.late.app.duration=20500000
+debug.sf.late.sf.duration=10500000
 
 # Shutdown
 init.userspace_reboot.is_supported=true
