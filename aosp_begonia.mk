@@ -23,6 +23,7 @@ TARGET_BUILD_APERTURE := true
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+$(call inherit-product, vendor/MiuiCameraLeica/config.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
