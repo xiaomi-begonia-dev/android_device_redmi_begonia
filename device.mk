@@ -15,7 +15,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
+    hardware/halcyon/interfaces/power-libperfmgr \
+    $(LOCAL_PATH)
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -295,7 +298,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-V1-ndk.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.begonia-libperfmgr
+    android.hardware.power-service.lineage-libperfmgr
 
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
