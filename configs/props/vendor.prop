@@ -209,6 +209,7 @@ ro.hardware.nfc_nci=nqx.default
 ro.vendor.mtk_exchange_support=1
 
 # Media
+debug.stagefright.ccodec=1
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.vendor.mtk_config_max_dram_size=0x800000000
 ro.vendor.pref_scale_enable_cfg=1
