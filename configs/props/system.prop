@@ -29,9 +29,6 @@ persist.sys.brightness.low.gamma=true
 # Disable MTE Async for system server
 persist.arm64.memtag.system_server=off
 
-# Filesystem
-fs_mgr.overlayfs.prefer_cache_backing_storage=true
-
 # Graphics
 ro.opengles.version=196610
 
