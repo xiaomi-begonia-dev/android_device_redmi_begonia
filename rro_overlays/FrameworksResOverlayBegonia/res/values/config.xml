@@ -110,6 +110,18 @@
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
+    <!-- Build properties from a GMS certified device -->
+    <string-array name="config_certifiedBuildProperties" translatable="false">
+        <item>sailfish</item> <!-- Build.PRODUCT -->
+        <item>sailfish</item> <!-- Build.DEVICE -->
+        <item>Google</item> <!-- Build.MANUFACTURER -->
+        <item>google</item> <!-- Build.BRAND -->
+        <item>Pixel</item> <!-- Build.MODEL -->
+        <item>google/sailfish/sailfish:8.1.0/OPM1.171019.011/4448085:user/release-keys</item> <!-- Build.FINGERPRINT -->
+        <item>2017-12-05</item> <!-- Build.SECURITY_PATCH -->
+        <item>OPM1.171019.011</item> <!-- Build.ID -->
+    </string-array>
+
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
 
