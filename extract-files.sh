@@ -108,6 +108,9 @@ function blob_fixup {
         vendor/lib64/libwifi-hal-mtk.so)
             "${PATCHELF}" --set-soname "libwifi-hal-mtk.so" "${2}"
             ;;
+        vendor/lib/libMtkOmxVdecEx.so)
+            grep -q "libui_shim.so" "$2" || "$PATCHELF" --add-needed "libui_shim.so" "$2"
+            ;;
     esac
 }
 
