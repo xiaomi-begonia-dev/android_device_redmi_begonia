@@ -407,6 +407,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+# Shim
+PRODUCT_PACKAGES += \
+    libui_shim.vendor
+
 # Text classifier
 PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor
