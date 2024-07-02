@@ -224,13 +224,6 @@ ro.vendor.mediatek.platform=MT6785
 ro.vendor.mediatek.version.branch=alps-mp-r0.mp1.tc8sp
 ro.vendor.mediatek.version.release=alps-mp-r0.mp1.tc8sp-V1_xiaomi.mgr.r0mp1.k6889v1.64_P100
 
-# Power-saving props
-ro.vendor.use_data_netmgrd=true
-ro.vold.umsdirtyratio=20
-ro.ril.disable.power.collapse=0
-power.saving.mode=1
-pm.sleep_mode=1
-
 # PQ
 debug.mediatek.game_pq_enable=1
 persist.vendor.sys.pq.adl.idx=0
