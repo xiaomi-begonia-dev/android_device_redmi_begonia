@@ -45,7 +45,8 @@ PRODUCT_PACKAGES += \
     libvisualizer \
     libtinycompress \
     libaudiofoundation \
-    libaudiofoundation.vendor
+    libaudiofoundation.vendor \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -65,7 +66,11 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
-    android.hardware.camera.provider@2.6.vendor
+    android.hardware.camera.provider@2.6.vendor \
+    libcamera_metadata.vendor \
+    libexpat.vendor \
+    libpng.vendor \
+    liblz4.vendor
 
 # Certs
 PRODUCT_COPY_FILES += \
@@ -129,7 +134,9 @@ PRODUCT_PACKAGES += \
     libvulkan \
     libfmq.vendor \
     libhwc2on1adapter \
-    libhwc2onfbadapter
+    libhwc2onfbadapter \
+    libion.vendor \
+    libui.vendor
 
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -157,11 +164,19 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    libgatekeeper.vendor
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -191,6 +206,8 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor:64 \
     libsoft_attestation_cert.vendor:64 \
     libpuresoftkeymasterdevice.vendor:64 \
+    libnetutils.vendor \
+    libdumpstateutil.vendor \
     libshim_beanpod.vendor
 
 # Lights
@@ -233,6 +250,9 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcNci \
     Tag
+
+PRODUCT_PACKAGES += \
+    APUWareApusysServer.vendor
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -343,7 +363,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.0.vendor \
     android.hardware.radio.config@1.1.vendor \
     android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor
+    android.hardware.radio.deprecated@1.0.vendor \
+    librpcril.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -385,6 +406,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libsensorndkbridge \
+    libpower.vendor \
     libshim_sensors
 
 PRODUCT_COPY_FILES += \
@@ -420,6 +442,9 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so
 
+PRODUCT_PACKAGES += \
+    libutilscallstack.vendor
+
 # WiFi
 PRODUCT_PACKAGES += \
     libnl \
@@ -453,6 +478,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor \
+    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhidlbase \
