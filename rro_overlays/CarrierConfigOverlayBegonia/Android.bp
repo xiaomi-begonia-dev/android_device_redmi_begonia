@@ -8,7 +8,6 @@ runtime_resource_overlay {
     name: "CarrierConfigOverlayBegonia",
     theme: "CarrierConfigOverlay",
     certificate: "platform",
-    sdk_version: "current",
     resource_dirs: ["res"],
     product_specific: true,
     aaptflags: ["--keep-raw-values"]
