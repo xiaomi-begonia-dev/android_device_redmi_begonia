@@ -160,10 +160,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DT2W-Service-Begonia
 
-# Engineering mode
-PRODUCT_PACKAGES += \
-    libjni_shim
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
