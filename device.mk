@@ -93,18 +93,13 @@ PRODUCT_PACKAGES += \
     XiaomiParts
 
 # Dex
-DONT_DEXPREOPT_PREBUILTS := true
 WITH_DEXPREOPT := true
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
-WITH_DEXPREOPT_DEBUG_INFO := false
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
-
-# Dex - Android Go Configurations
-PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+DONT_DEXPREOPT_PREBUILTS := false
 
 # Dex - Debug
 ART_BUILD_TARGET_NDEBUG := true
@@ -117,14 +112,16 @@ USE_DEX2OAT_DEBUG := false
 
 # Dex - Apps
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle \
-    SettingsIntelligence \
-    SettingsProvider \
-    SettingsGoogle \
-    NexusLauncherRelease \
-    CustomPixelLauncherOverlay \
-    Phonesky \
-    GoogleServicesFramework
+    SystemUI \
+    Settings \
+    PrebuiltGmsCore \
+    NestQuickStep \
+    GoogleServicesFramework \
+    Phonesky
+
+# Dex - Android Go Configurations
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
 # Display
 PRODUCT_PACKAGES += \
